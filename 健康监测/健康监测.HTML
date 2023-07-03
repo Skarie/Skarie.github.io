@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>智慧养老平台 - 健康监测</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(../图片文件/健康监测背景.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        
+        .module {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .module i {
+            font-size: 48px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        .module h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .module p {
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .btn-back {
+            background-color: #ccc;
+            color: white;
+        }
+        
+        .btn-back:hover {
+            background-color: #888;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+        
+        footer p {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>健康监测</h1>
+        </header>
+        <main>
+            <div class="module">
+                <i class="fas fa-heartbeat"></i>
+                <h2>心率监测</h2>
+                <p>当前心率：70 bpm</p>
+                <button class="btn">开始监测</button>
+            </div>
+            <div class="module">
+                <i class="fas fa-thermometer-three-quarters"></i>
+                <h2>体温监测</h2>
+                <p>当前体温：36.5 °C</p>
+                <button class="btn">开始监测</button>
+            </div>
+            <div class="module">
+                <i class="fas fa-tachometer-alt"></i>
+                <h2>血压监测</h2>
+                <p>当前血压：120/80 mmHg</p>
+                <button class="btn">开始监测</button>
+            </div>
+            <!-- 添加更多的监测模块 -->
+        </main>
+        <footer>
+            <button class="btn btn-back" onclick="goBack()">返回上一级</button>
+            <p>版权所有 &copy; 2023 智慧养老平台</p>
+        </footer>
+    </div>
+</body>
+
+</html>
