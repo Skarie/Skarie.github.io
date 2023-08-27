@@ -30,7 +30,50 @@
             line-height: 1.5;
             color: #fffefe;
         }
+        
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .btn-back {
+            background-color: #ccc;
+            color: white;
+        }
+        
+        .btn-back:hover {
+            background-color: #888;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+        
+        footer p {
+            font-size: 14px;
+            color: #888;
+        }
     </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 
 <body>
@@ -46,6 +89,10 @@
 
         </ul>
         <p>我们的团队由热爱社区养老事业的“专业人士”组成，不断努力改进平台功能和用户体验。</p>
+        <footer>
+            <button class="btn btn-back" onclick="goBack()">返回上一级</button>
+            <p>版权所有 &copy; 2023 智慧养老平台</p>
+        </footer>
     </div>
 </body>
 
